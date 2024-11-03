@@ -49,7 +49,14 @@ Here is a preview of the dashboard:
   
 - All of the sexual crimes were majority female victims (up to 99%)  besides sodomy, which had 50%.
 
-  #### Victim Descent
+#### Victim Descent
+
+<img src="images/victim_descent_screenshot.png" alt="Dashboard Preview" width="500" />
+
+- Analying descent in crime can be seen as questionable ethically, so I for this section I will be brief for this section.
+- Crime volume for each victim descent seems to very largely between each area, most likely due to population of each descent for any given area
+- The proportion of white victims in violent crime is significantly lower than the other crime types
+- Property crime seems to have the most balanced distribution amongst the victim descents
 ## Setup Overview 
 1. Preprocess Data:
    
