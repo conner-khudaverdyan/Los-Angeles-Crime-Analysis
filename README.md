@@ -24,8 +24,7 @@ Here is a preview of the dashboard:
 - Utilizing Tableau's actions feature to produce visualizations of victim demographics and crime types for specific areas in los angeles by manually selecting them in the dashboard UI
 
 ## Analysis 
-
-### General Analysis for Los Angeles as a whole
+In this section I will provide some patterns and insights I found using Tableau and the dashboard I created. For simplicity, the visualizations are generated on the entire dataset, so if you would like to see them for a given area or set of areas, refer to the dashboard link from earlier or downloaded the workbook yourself from the repository.
 
 #### Victim Age 
 <img src="images/victim_age_screenshot.png" alt="Dashboard Preview" width="500" />
@@ -43,19 +42,20 @@ Here is a preview of the dashboard:
 <img src="images/victim_sex_screenshot.png" alt="Dashboard Preview" width="500" />
 
 
-- Victims of property and violent crimes are mostly men. One possible reason for this is that men are seen as 'less delicate', so criminals are more likely to be violent or steal from them over women, possibly  out of good consiousness. The ony exception for violent crimes is assault between intimate partners; interestingly, this consiousness is abscent when the women is someone close to you. The exception for property crime was identity theft.
+- Men make up a significant proportion of victims in both property and violent crimes. This trend may stem from social perceptions that frame men as tougher abd  'fair game', potentially leading criminals to target them more frequently. However, there are notable exceptions. In cases of intimate partner violence, women are more frequently targeted, highlighting how patterns of victimization can vary based on the relationship context. Identity theft also stands out as an exception in property crimes, where gender differences are less pronounced and the crime is less phyiscally confrontational.
   
-- The only areas that had a majority of female victims were 77th street and Southeast.
+- The only areas that had a majority of female victims were 77th street and Southeast
   
-- All of the sexual crimes were majority female victims (up to 99%)  besides sodomy, which had 50%.
+- Nearly all sexual crimes overwhelmingly affect female victims, with women comprising up to 99% of victims in some cases. 
 
 #### Victim Descent
 
+- Analyzing data on victims' ethnic backgrounds requires careful ethical and contextual consideration, so I will be breif in this section
+  
 <img src="images/victim_descent_screenshot.png" alt="Dashboard Preview" width="500" />
 
-- Analying descent in crime can be seen as questionable ethically, so I for this section I will be brief for this section.
-- Crime volume for each victim descent seems to very largely between each area, most likely due to population of each descent for any given area
-- The proportion of white victims in violent crime is significantly lower than the other crime types
+- Crime volume varies substantially across different ethnic backgrounds in each area, likely reflecting the population demographics within those regions.
+- The proportion of white victims in violent crime is significantly lower than the other crime types. Upon further investigation, I found that this was consistent across most areas as well. 
 - Property crime seems to have the most balanced distribution amongst the victim descents
 ## Setup Overview 
 1. Preprocess Data:
