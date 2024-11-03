@@ -43,7 +43,13 @@ Here is a preview of the dashboard:
 <img src="images/victim_sex_screenshot.png" alt="Dashboard Preview" width="500" />
 
 
-- Victims of property and violent crimes are mostly men. One possible reason for this is that men are seen as 'less delicate', so criminals are more likely to target them purely out of good consiousness. 
+- Victims of property and violent crimes are mostly men. One possible reason for this is that men are seen as 'less delicate', so criminals are more likely to be violent or steal from them over women, possibly  out of good consiousness. The ony exception for violent crimes is assault between intimate partners; interestingly, this consiousness is abscent when the women is someone close to you. The exception for property crime was identity theft.
+  
+- The only areas that had a majority of female victims were 77th street and Southeast.
+  
+- All of the sexual crimes were majority female victims (up to 99%)  besides sodomy, which had 50%.
+
+  #### Victim Descent
 ## Setup Overview 
 1. Preprocess Data:
    
