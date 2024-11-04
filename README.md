@@ -1,25 +1,18 @@
 # Los-Angeles-Crime-Analysis
 
 ## Introduction
-In this project I used Python, PostgreSQL and Tableau to analyze and visualize  geographic and demographic trends in Los Angeles crime data.  Here are a few questions of interest that guided  and inspired the construction and structure of my analysis :
-- Which areas of Los Angeles generate the most of each type of crime?
-- Which age groups are more likely to be victims of crime?
-- Are certain crime types more prevalent among victims of one sex over the other?
-- Are some descents disproportionately targeted in specific types of crimes/areas?
+In this project I used Python, PostgreSQL and Tableau to analyze and visualize  geographic and demographic trends in Los Angeles crime data.  My goal with investigating this data was to find meaningful insights that would benefit the people, workers, and police departments of LA county. I hope by making my dashboard public that the Los Angeles crime data can be more accessible and interpretable for the average person, and that my visualizations can inspire more curiousity and research.
 
-
-For those who own Tableau Desktop, the final dashboard that illustrates the relationship between crime types, location, and victim demographics such as age, descent, and sex can be found as a packaged workbook file in the repositroy. The dashboard is also easily accessible on Tableau Public through the following link: [crime_dashboard](https://public.tableau.com/views/crime_book/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
-Here is a preview of the dashboard: 
+*Preview of dashboard:*
 
 <img src="images/dashboard_screenshot.png" alt="Dashboard Preview" width="700" />
 
 
-## Table of Contents:
-1. Project and Setup Overview
-2. Analysis
-3. Real-World Application
-4. Conclusion / Reflection
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Analysis](#analysis)
+3. [Real-World Application](#Real-World-Application)
+4. [Conclusion](#conclusion)
 
 ## Project Overview
 #### Data Sources: 
@@ -83,7 +76,9 @@ In this section I will provide some patterns and insights I found using Tableau 
 - The proportion of white victims in violent crime is significantly lower than the other crime types. Upon further investigation, I found that this was consistent across most areas as well. 
 - Property crime seems to have the most balanced distribution amongst the victim descents
 
-## Where to 
+## Real-World Application
+
+## Conclusion
 Through the analysis and visualizations in this project, I found that crime categorizations and victim demographics are very much connected to crime volumne. In particular, the relationship between the two depends heavily on the given crime categorization, and sometimes the area. However, there are many details that the dataset lacks that would help to make more robust conclusions about crime in LA. For instance, our main metric crime volume does not take into account the  population for each descent, sex, and age within each area.
 
 
