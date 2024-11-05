@@ -20,10 +20,16 @@ In this project I used Python, PostgreSQL and Tableau to analyze and visualize  
 - Because of the size of the csv file, I could not directly store the raw data in the repository, but it can be downloaded by anyone using the link above
 
 #### Data Preprocessing and Initial Exploration (Python): 
+`eda.ipynb`
+
 - Using python notebook to assess quality of data and choose features to use in final database
-- Initial data cleaning and structuring using Python on raw CSV files.
+
+`data_preprocessing.py`
+- Initial data cleaning and structuring using Python on raw CSV files 
 - Implementation of function to categorize over 150 different crimes into more general labels such as violent, property, etc
 #### Database Transformation (PostgreSQL): 
+`database.setup.sql`
+
 - Further data processing and wrangling using SQL scripts
 - Setting up final relational database with PostgreSQL for efficient querying and easy integration with Tableau
 #### Visualization (Tableau): 
@@ -52,7 +58,7 @@ In this section I will provide some patterns and insights I found using Tableau 
 - It seems that victims are much more likely to be victims of crime once they become 18 years old
 - There are two unual spikes at age 35 and 50, but after further investigation I found that in some areas the police department logged most of their crimes for those two ages specifically. This is likely because in data entry, those departments choose to estimate the victim age rather than input victims' exact ages.
 
-#### Victim Sex
+### Victim Sex
 *Are certain crime types more prevalent among victims of one sex over the other?*
 
 - Note that in the dataset, male and female are the only defined factors for victim sex. There was an 'unknown' factor, but it was amibiguous what this encompassed so I excluded it from the dashboard
@@ -66,31 +72,21 @@ In this section I will provide some patterns and insights I found using Tableau 
   
 - Nearly all sexual crimes overwhelmingly affect female victims, with women comprising up to 99% of victims in some cases. 
 
-#### Victim Descent
-
-- Analyzing data on victims' ethnic backgrounds requires careful ethical and contextual consideration, so I will be breif in this section
+### Victim Descent
+*Are some descents disproportionately targeted in specific types of crimes/areas? be useful for los angeles county ?*
+- Analyzing data on victims' ethnic backgrounds requires careful ethical and contextual consideration. Without any data on the descent populations for each police department area, I will be brief with this section
   
 <img src="images/victim_descent_screenshot.png" alt="Dashboard Preview" width="500" />
 
-- Crime volume varies substantially across different ethnic backgrounds in each area, likely reflecting the population demographics within those regions.
+- Crime volume varies substantially across different ethnic backgrounds in each area, likely reflecting the population demographics within those regions. This is evident in areas like Mission, 77th Street, and Southeast
 - The proportion of white victims in violent crime is significantly lower than the other crime types. Upon further investigation, I found that this was consistent across most areas as well. 
-- Property crime seems to have the most balanced distribution amongst the victim descents
+- Property crime seems to have the most balanced distribution amongst the victim descents, which aligns with our previous finding, which was that property crime was consistent across all area locations.
 
 ## Real-World Application
-
+I think the findings in this analysis have multiple applications and uses for the real-world. 
+-  The visualizations identify which areas need more resource allocation, whether it be through increased policing, active investigations, charities, or even awareness programs
+-  *Understanding Vulnerable Age Groups:* Knowing which age groups are more frequently targeted within each area allows for targeted outreach, education and involvment of other organizations. For example, in areas like Southeast and Central LA, there is a high proportion of child victims and young adults, indicating the need for involvment of the Department of Children and Family Services (DCFS) in these areas.
+-  Highlighting Crime Types by Sex of Victim: Insights into how crime types vary by sex can inform raise awareness for prevention campaigns, support services, and even self-defense initiatives tailored to those at higher risk. For example, the pie charts displayed how sexual crimes are much more prevalent towards females. This information might also help direct funding toward services for groups disproportionately impacted by certain crimes. 
 ## Conclusion
-Through the analysis and visualizations in this project, I found that crime categorizations and victim demographics are very much connected to crime volumne. In particular, the relationship between the two depends heavily on the given crime categorization, and sometimes the area. However, there are many details that the dataset lacks that would help to make more robust conclusions about crime in LA. For instance, our main metric crime volume does not take into account the  population for each descent, sex, and age within each area.
+Through the analysis and visualizations in this project, I found that crime categorizations and victim demographics are very much connected to crime volumne. In particular, the relationship between the two depends heavily on the given crime categorization, and sometimes the area. However, there are many details that the dataset lacks that would help to make more robust conclusions about crime in LA. For instance, our main metric crime volume does not take into account the  population for each descent, sex, and age within each area. Because the police departments have an ambiguous radius for covering crimes, I found it difficult to find a population dataset that could be joined with the crime dataset. I hope in the future that the population data will become more accessible on the website, which would open more avenues of analysis.
 
-
-## Setup Overview 
-1. Preprocess Data:
-   
-  Run data_preprocessing.py to clean and format the raw CSV files. Make sure you have the csv file downloaded and stored in data subdirectory.
-
-2. Set Up Database:
-   
-  Set up PostgreSQL connection, then execute the SQL script database_setup.sql to create and populate tables
-
-3. Visualization:
-
-  Connect to database and create dashboard in Tableau to find/extract desired insights and analysis. When complete, upload to Tableau public to make accessible for others to see and interact with dashboard.
