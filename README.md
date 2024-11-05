@@ -1,7 +1,8 @@
 # Los-Angeles-Crime-Analysis
 
 ## Introduction
-In this project I used Python, PostgreSQL and Tableau to analyze and visualize  geographic and demographic trends in Los Angeles crime data.  My goal with investigating this data was to find meaningful insights that would benefit the people, workers, and police departments of LA county. I hope by making my dashboard public that the Los Angeles crime data can be more accessible and interpretable for the average person, and that my visualizations can inspire more curiousity and research.
+In this project I used Python, PostgreSQL and Tableau to analyze and visualize  geographic and demographic trends in Los Angeles crime data.  My goal with investigating this data was to find meaningful insights that would benefit the people, workers, and police departments of LA county. I hope by making my dashboard public that the Los Angeles crime data can be more accessible and interpretable for the average person, and that my visualizations can inspire more curiousity and research. 
+- The published dashboard on Tableau Public can be found [here](https://public.tableau.com/views/crime_book/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 *Preview of dashboard:*
 
