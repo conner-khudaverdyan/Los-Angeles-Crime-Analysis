@@ -12,7 +12,7 @@ In this project I used Python, PostgreSQL and Tableau to analyze and visualize  
 1. [Project Overview](#project-overview)
 2. [Analysis](#analysis)
 3. [Real-World Application](#Real-World-Application)
-4. [Conclusion](#conclusion)
+4. [Improvements for the Future](#Improvements-for-the-Future)
 
 ## Project Overview
 #### Data Sources: 
@@ -84,9 +84,14 @@ In this section I will provide some patterns and insights I found using Tableau 
 
 ## Real-World Application
 I think the findings in this analysis have multiple applications and uses for the real-world. 
--  The visualizations identify which areas need more resource allocation, whether it be through increased policing, active investigations, charities, or even awareness programs
--  *Understanding Vulnerable Age Groups:* Knowing which age groups are more frequently targeted within each area allows for targeted outreach, education and involvment of other organizations. For example, in areas like Southeast and Central LA, there is a high proportion of child victims and young adults, indicating the need for involvment of the Department of Children and Family Services (DCFS) in these areas.
--  Highlighting Crime Types by Sex of Victim: Insights into how crime types vary by sex can inform raise awareness for prevention campaigns, support services, and even self-defense initiatives tailored to those at higher risk. For example, the pie charts displayed how sexual crimes are much more prevalent towards females. This information might also help direct funding toward services for groups disproportionately impacted by certain crimes. 
-## Conclusion
-Through the analysis and visualizations in this project, I found that crime categorizations and victim demographics are very much connected to crime volumne. In particular, the relationship between the two depends heavily on the given crime categorization, and sometimes the area. However, there are many details that the dataset lacks that would help to make more robust conclusions about crime in LA. For instance, our main metric crime volume does not take into account the  population for each descent, sex, and age within each area. Because the police departments have an ambiguous radius for covering crimes, I found it difficult to find a population dataset that could be joined with the crime dataset. I hope in the future that the population data will become more accessible on the website, which would open more avenues of analysis.
+-  *Effectively Distributing Resources:* The visualizations clearly display which areas generate more crime, which can help determine resource allocation across the county. For example, the dashboard reveals that fraud is very common in the very nothern and western areas of Los Angeles; with this information, these areas can invest more into units that specialize with this type of crime. 
+-  *Understanding Vulnerable Groups:* Knowing which demographics are more frequently targeted within each area allows for targeted outreach, education and involvment of other organizations. For example, in areas like Southeast and Central LA, there is a high proportion of child victims and young adults, indicating the need for involvment of the Department of Children and Family Services (DCFS) in these areas.
+-  *Highlighting Crime Types by Sex of Victim:* Insights into how crime types vary by sex can raise awareness for prevention campaigns, support services, and even self-defense initiatives tailored to those at higher risk. For example, the pie charts displayed how sexual crimes are much more prevalent towards females, a statistics that can be used to help raise funds and awareness for said victims.
+
+
+### Improvements for the Future
+
+- It is important to note that there are many details that the dataset lacks that would help to make more robust conclusions about crime in LA. For instance, our main metric crime volume does not take into account the  population for each descent, sex, and age within each area. Because the police departments have an ambiguous radius for covering crimes, I found it difficult to find a population dataset that could be joined with the crime dataset. I hope in the future that the population data will become more accessible on the website, which would open more avenues of analysis.
+- In this project I tackled geography and demographics, but moving forward I am also interested in the temporal aspect of crime volumne? I am curious to see how the time of year affects the number of crimes for each area, and if it is possible to forecast crime using this dataset. 
+  
 
